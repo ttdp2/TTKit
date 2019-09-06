@@ -27,6 +27,7 @@
 		71C2B346231FA400000E49F2 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B345231FA400000E49F2 /* BaseTableView.swift */; };
 		71C2B348231FA445000E49F2 /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B347231FA445000E49F2 /* BaseTableCell.swift */; };
 		71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B34A231FA707000E49F2 /* ScrollViewController.swift */; };
+		71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		71C2B345231FA400000E49F2 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		71C2B347231FA445000E49F2 /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
 		71C2B34A231FA707000E49F2 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollHeaderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				71C2B340231FA07D000E49F2 /* Base */,
 				71C2B34A231FA707000E49F2 /* ScrollViewController.swift */,
+				71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				71C2B326231F9D5B000E49F2 /* UINavigationController+Extension.swift in Sources */,
 				71C2B32F231F9DDE000E49F2 /* UITableView+Extension.swift in Sources */,
 				71C2B346231FA400000E49F2 /* BaseTableView.swift in Sources */,
+				71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */,
 				71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */,
 				71C2B344231FA1DC000E49F2 /* BaseView.swift in Sources */,
 				71C2B348231FA445000E49F2 /* BaseTableCell.swift in Sources */,
