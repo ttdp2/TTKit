@@ -15,7 +15,8 @@ let FA = UIColor.fromHEX("FABCDE")
 class MainViewController: BaseViewController {
     
     let demos = ["Scroll view including View & TableView",
-                 "Scroll view including Header & TableView"]
+                 "Scroll view including Header & TableView",
+                 "UIView animation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = ScrollViewController()
         case 1:
             viewController = ScrollHeaderViewController()
+        case 2:
+            viewController = UIViewAnimationViewController()
         default:
             viewController = BaseViewController()
         }
