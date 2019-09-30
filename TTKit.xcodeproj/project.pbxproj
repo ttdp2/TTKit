@@ -29,8 +29,27 @@
 		71C2B348231FA445000E49F2 /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B347231FA445000E49F2 /* BaseTableCell.swift */; };
 		71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B34A231FA707000E49F2 /* ScrollViewController.swift */; };
 		71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */; };
+		71F8F7D323418BAB0005F27E /* ImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */; };
+		71F8F7D723418E330005F27E /* Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F8F7D523418C9C0005F27E /* Gallery.framework */; };
+		71F8F7D823418E330005F27E /* Gallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71F8F7D523418C9C0005F27E /* Gallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		71F8F7DF2341B5C30005F27E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7DE2341B5C30005F27E /* Images.swift */; };
+		71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7E02341B5FE0005F27E /* Colors.swift */; };
 		AC3FD08C233C540E00324BBE /* LeftAlignedActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71F8F7D923418E330005F27E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				71F8F7D823418E330005F27E /* Gallery.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnimationViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +76,10 @@
 		71C2B347231FA445000E49F2 /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
 		71C2B34A231FA707000E49F2 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollHeaderViewController.swift; sourceTree = "<group>"; };
+		71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewController.swift; sourceTree = "<group>"; };
+		71F8F7D523418C9C0005F27E /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gallery.framework; sourceTree = "<group>"; };
+		71F8F7DE2341B5C30005F27E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		71F8F7E02341B5FE0005F27E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedActionSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F8F7D723418E330005F27E /* Gallery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +119,9 @@
 				71C2B340231FA07D000E49F2 /* Base */,
 				71C2B33D231F9FB2000E49F2 /* Views */,
 				71C2B338231F9EA7000E49F2 /* Utilities */,
+				71F8F7DD2341B5B00005F27E /* Constants */,
 				71C2B324231F9D1B000E49F2 /* Extensions */,
+				71F8F7D423418BFB0005F27E /* Frameworks */,
 				71C2B329231F9D81000E49F2 /* Supporting Files */,
 				71C2B31E231F9CCD000E49F2 /* Info.plist */,
 			);
@@ -143,6 +169,7 @@
 				71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */,
 				71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */,
 				AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */,
+				71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +185,23 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		71F8F7D423418BFB0005F27E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71F8F7D523418C9C0005F27E /* Gallery.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		71F8F7DD2341B5B00005F27E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				71F8F7E02341B5FE0005F27E /* Colors.swift */,
+				71F8F7DE2341B5C30005F27E /* Images.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +212,7 @@
 				71C2B30B231F9CCB000E49F2 /* Sources */,
 				71C2B30C231F9CCB000E49F2 /* Frameworks */,
 				71C2B30D231F9CCB000E49F2 /* Resources */,
+				71F8F7D923418E330005F27E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71C2B32B231F9DA8000E49F2 /* UIViewController+Extension.swift in Sources */,
+				71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */,
 				71C2B33F231F9FF8000E49F2 /* MainViewController.swift in Sources */,
 				71C2B333231F9E20000E49F2 /* UIWindow+Extension.swift in Sources */,
 				71C2B33A231F9ED8000E49F2 /* DateUtility.swift in Sources */,
+				71F8F7D323418BAB0005F27E /* ImageGalleryViewController.swift in Sources */,
 				71C2B32D231F9DCB000E49F2 /* UITableViewCell+Extension.swift in Sources */,
 				71C2B342231FA088000E49F2 /* BaseViewController.swift in Sources */,
 				71C2B331231F9DF3000E49F2 /* UserDefaults+Extension.swift in Sources */,
@@ -242,6 +289,7 @@
 				71C2B32F231F9DDE000E49F2 /* UITableView+Extension.swift in Sources */,
 				71C2B346231FA400000E49F2 /* BaseTableView.swift in Sources */,
 				71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */,
+				71F8F7DF2341B5C30005F27E /* Images.swift in Sources */,
 				71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */,
 				71C2B344231FA1DC000E49F2 /* BaseView.swift in Sources */,
 				71C2B348231FA445000E49F2 /* BaseTableCell.swift in Sources */,
@@ -388,6 +436,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JJ29QPJ4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTKit/Frameworks",
+				);
 				INFOPLIST_FILE = TTKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,6 +458,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JJ29QPJ4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTKit/Frameworks",
+				);
 				INFOPLIST_FILE = TTKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -15,7 +15,7 @@ class UIViewAnimationViewController: BaseViewController {
     
     lazy var blueView: UIView = {
         let view = BaseView()
-        view.backgroundColor = BC
+        view.backgroundColor = Colors.BC
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleBlue))
         view.addGestureRecognizer(tap)
         return view
@@ -27,7 +27,7 @@ class UIViewAnimationViewController: BaseViewController {
     
     lazy var greenView: UIView = {
         let view = BaseView()
-        view.backgroundColor = DE
+        view.backgroundColor = Colors.DE
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleGreen))
         view.addGestureRecognizer(tap)
         return view

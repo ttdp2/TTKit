@@ -30,7 +30,7 @@ extension ScrollHeaderViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = BC
+        view.backgroundColor = Colors.BC
         return view
     }
     

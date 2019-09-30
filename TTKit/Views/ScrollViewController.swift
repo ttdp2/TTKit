@@ -12,7 +12,7 @@ class ScrollViewController: BaseViewController {
     
     lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
-        view.backgroundColor = BC
+        view.backgroundColor = Colors.BC
         view.delegate = self
         view.bounces = false
         return view
@@ -27,7 +27,7 @@ class ScrollViewController: BaseViewController {
     
     let topView: UIView = {
         let view = BaseView()
-        view.backgroundColor = DE
+        view.backgroundColor = Colors.DE
         return view
     }()
     

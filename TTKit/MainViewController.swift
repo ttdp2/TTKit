@@ -8,16 +8,13 @@
 
 import UIKit
 
-let BC = UIColor.fromHEX("BCDEFA")
-let DE = UIColor.fromHEX("DEFABC")
-let FA = UIColor.fromHEX("FABCDE")
-
 class MainViewController: BaseViewController {
     
     let demos = ["Scroll view including View & TableView",
                  "Scroll view including Header & TableView",
                  "UIView animation",
-                 "Left Alignment Action Sheet"]
+                 "Left alignment Action Sheet",
+                 "Image gallery"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +67,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = UIViewAnimationViewController()
         case 3:
             viewController = LeftAlignedActionSheetViewController()
+        case 4:
+            viewController = ImageGalleryViewController()
         default:
             viewController = BaseViewController()
         }

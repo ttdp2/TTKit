@@ -1,0 +1,4 @@
+framework module Gallery {
+  header "Gallery-Swift.h"
+  requires objc
+}

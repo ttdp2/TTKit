@@ -18,7 +18,7 @@ class LeftAlignedActionSheetViewController: BaseViewController {
     }
     
     override func setupViews() {
-        view.backgroundColor = BC
+        view.backgroundColor = Colors.BC
     }
     
     // MARK: - Action
