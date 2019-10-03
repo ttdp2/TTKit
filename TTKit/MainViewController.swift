@@ -12,9 +12,10 @@ class MainViewController: BaseViewController {
     
     let demos = ["Scroll view including View & TableView",
                  "Scroll view including Header & TableView",
-                 "UIView animation",
-                 "Left alignment Action Sheet",
-                 "Image gallery"]
+                 "UIView Animation",
+                 "Left Alignment Action Sheet",
+                 "Image Gallery",
+                 "Dynamic Table headerView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +70,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = LeftAlignedActionSheetViewController()
         case 4:
             viewController = ImageGalleryViewController()
+        case 5:
+            viewController = DynamicTableHeaderViewController()
         default:
             viewController = BaseViewController()
         }

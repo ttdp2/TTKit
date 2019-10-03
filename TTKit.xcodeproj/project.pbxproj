@@ -34,6 +34,7 @@
 		71F8F7D823418E330005F27E /* Gallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71F8F7D523418C9C0005F27E /* Gallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71F8F7DF2341B5C30005F27E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7DE2341B5C30005F27E /* Images.swift */; };
 		71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7E02341B5FE0005F27E /* Colors.swift */; };
+		71FAC3D72342C6B000755F06 /* DynamicTableHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */; };
 		AC3FD08C233C540E00324BBE /* LeftAlignedActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		71F8F7D523418C9C0005F27E /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gallery.framework; sourceTree = "<group>"; };
 		71F8F7DE2341B5C30005F27E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		71F8F7E02341B5FE0005F27E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableHeaderViewController.swift; sourceTree = "<group>"; };
 		AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedActionSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 				71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */,
 				AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */,
 				71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */,
+				71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				71C2B32F231F9DDE000E49F2 /* UITableView+Extension.swift in Sources */,
 				71C2B346231FA400000E49F2 /* BaseTableView.swift in Sources */,
 				71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */,
+				71FAC3D72342C6B000755F06 /* DynamicTableHeaderViewController.swift in Sources */,
 				71F8F7DF2341B5C30005F27E /* Images.swift in Sources */,
 				71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */,
 				71C2B344231FA1DC000E49F2 /* BaseView.swift in Sources */,
