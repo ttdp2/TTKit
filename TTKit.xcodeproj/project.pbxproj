@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7156B79E234AAF550010C338 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156B79D234AAF550010C338 /* ImageZoomViewController.swift */; };
 		71B9DF19233B6CFD00DFA00A /* UIViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */; };
 		71C2B313231F9CCB000E49F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B312231F9CCB000E49F2 /* AppDelegate.swift */; };
 		71C2B31A231F9CCD000E49F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C2B319231F9CCD000E49F2 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7156B79D234AAF550010C338 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnimationViewController.swift; sourceTree = "<group>"; };
 		71C2B30F231F9CCB000E49F2 /* TTKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C2B312231F9CCB000E49F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */,
 				71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */,
 				71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */,
+				7156B79D234AAF550010C338 /* ImageZoomViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				AC3FD08C233C540E00324BBE /* LeftAlignedActionSheetViewController.swift in Sources */,
 				71B9DF19233B6CFD00DFA00A /* UIViewAnimationViewController.swift in Sources */,
 				71C2B337231F9E8C000E49F2 /* UIColor+Extension.swift in Sources */,
+				7156B79E234AAF550010C338 /* ImageZoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

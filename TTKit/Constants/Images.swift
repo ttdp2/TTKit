@@ -10,6 +10,8 @@ import UIKit
 
 struct Images {
     
+    static let LA16 = UIImage(named: "LA16")
+    static let LA34 = UIImage(named: "LA34")
     static let WWDC = UIImage(named: "wwdc16")
     static let Delete = UIImage(named: "Delete")
     
