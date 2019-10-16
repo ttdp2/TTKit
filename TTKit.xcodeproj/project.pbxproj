@@ -173,9 +173,9 @@
 				71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */,
 				71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */,
 				AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */,
+				7156B79D234AAF550010C338 /* ImageZoomViewController.swift */,
 				71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */,
 				71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */,
-				7156B79D234AAF550010C338 /* ImageZoomViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

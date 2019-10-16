@@ -15,8 +15,8 @@ class MainViewController: BaseViewController {
                  "UIView Animation",
                  "Left Alignment Action Sheet",
                  "Image Gallery",
-                 "Dynamic Table headerView",
-                 "Image Zooming"]
+                 "Image Zooming",
+                 "Dynamic Table headerView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,9 +72,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         case 4:
             viewController = ImageGalleryViewController()
         case 5:
-            viewController = DynamicTableHeaderViewController()
-        case 6:
             viewController = ImageZoomViewController()
+        case 6:
+            viewController = DynamicTableHeaderViewController()
         default:
             viewController = BaseViewController()
         }

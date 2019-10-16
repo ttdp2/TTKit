@@ -13,6 +13,7 @@ class DynamicTableHeaderViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        hideKeyboardWhenTappedAround()
     }
     
     lazy var dynamicTable: DynamicTableView = {
@@ -45,7 +46,10 @@ extension DynamicTableHeaderViewController: UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 120
+        if let height = dynamicTable.headerViewHeightConstraint?.constant {
+            return height + 20
+        }
+        return 60 + 20
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -58,10 +62,11 @@ class DynamicTableView: BaseTableView, UITextViewDelegate {
     
     weak var controller: DynamicTableHeaderViewController!
     
+    let placeholder = "Dynamic text view"
     lazy var textView: UITextView = {
         let view = UITextView()
         view.textColor = .lightGray
-        view.text = "Dynamic text view"
+        view.text = placeholder
         view.font = UIFont.systemFont(ofSize: 16)
         view.layer.cornerRadius = 5
         view.layer.borderColor = UIColor.lightGray.cgColor
@@ -70,18 +75,60 @@ class DynamicTableView: BaseTableView, UITextViewDelegate {
         view.delegate = self
         return view
     }()
-
-    var headerViewHeightConstraint: NSLayoutConstraint!
+    
+    var headerViewHeightConstraint: NSLayoutConstraint?
     lazy var headerView: UIView = {
         let view = UIView()
         view.backgroundColor = Colors.DE
         view.addSubview(textView)
         view.addConstraints(format: "H:|-20-[v0]-20-|", views: textView)
         view.addConstraints(format: "V:|-10-[v0]", views: textView)
-        headerViewHeightConstraint = textView.heightAnchor.constraint(equalToConstant: 100)
-        headerViewHeightConstraint.isActive = true
+        headerViewHeightConstraint = textView.heightAnchor.constraint(equalToConstant: 60)
+        headerViewHeightConstraint?.isActive = true
         return view
     }()
+    
+    // MARK: - TextView Delegate
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == "Dynamic text view" {
+            textView.text = ""
+        }
+        textView.textColor = .black
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text == "" {
+            textView.text = "Dynamic text view"
+            textView.textColor = .lightGray
+        }
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        let width = textView.frame.width
+        let height = textView.sizeThatFits(CGSize(width: width, height: .infinity)).height
+        
+        if height > textView.frame.height {
+            if height > 60 && height < 120 {
+                headerViewHeightConstraint?.constant = height
+                
+                UIView.animate(withDuration: 0.2) {
+                    self.layoutIfNeeded()
+                    self.reloadData()
+                }
+            } else {
+                textView.isScrollEnabled = true
+            }
+        } else {
+            headerViewHeightConstraint?.constant = height > 60 ? height : 60
+            
+            UIView.animate(withDuration: 0.2) {
+                self.layoutIfNeeded()
+                self.reloadData()
+            }
+            textView.isScrollEnabled = false
+        }
+    }
     
 }
 
