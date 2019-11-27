@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710C6770238E330E0067AE59 /* Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710C676E238E32EE0067AE59 /* Gallery.framework */; };
+		710C6771238E330E0067AE59 /* Gallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 710C676E238E32EE0067AE59 /* Gallery.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		710C6773238E33340067AE59 /* RefresherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C6772238E33340067AE59 /* RefresherViewController.swift */; };
 		7156B79E234AAF550010C338 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156B79D234AAF550010C338 /* ImageZoomViewController.swift */; };
 		71B9DF19233B6CFD00DFA00A /* UIViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */; };
 		71C2B313231F9CCB000E49F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B312231F9CCB000E49F2 /* AppDelegate.swift */; };
@@ -31,8 +34,6 @@
 		71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B34A231FA707000E49F2 /* ScrollViewController.swift */; };
 		71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */; };
 		71F8F7D323418BAB0005F27E /* ImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */; };
-		71F8F7D723418E330005F27E /* Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F8F7D523418C9C0005F27E /* Gallery.framework */; };
-		71F8F7D823418E330005F27E /* Gallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71F8F7D523418C9C0005F27E /* Gallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71F8F7DF2341B5C30005F27E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7DE2341B5C30005F27E /* Images.swift */; };
 		71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7E02341B5FE0005F27E /* Colors.swift */; };
 		71FAC3D72342C6B000755F06 /* DynamicTableHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */; };
@@ -46,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				71F8F7D823418E330005F27E /* Gallery.framework in Embed Frameworks */,
+				710C6771238E330E0067AE59 /* Gallery.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		710C676E238E32EE0067AE59 /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gallery.framework; sourceTree = "<group>"; };
+		710C6772238E33340067AE59 /* RefresherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefresherViewController.swift; sourceTree = "<group>"; };
 		7156B79D234AAF550010C338 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnimationViewController.swift; sourceTree = "<group>"; };
 		71C2B30F231F9CCB000E49F2 /* TTKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +83,6 @@
 		71C2B34A231FA707000E49F2 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollHeaderViewController.swift; sourceTree = "<group>"; };
 		71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewController.swift; sourceTree = "<group>"; };
-		71F8F7D523418C9C0005F27E /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gallery.framework; sourceTree = "<group>"; };
 		71F8F7DE2341B5C30005F27E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		71F8F7E02341B5FE0005F27E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableHeaderViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F8F7D723418E330005F27E /* Gallery.framework in Frameworks */,
+				710C6770238E330E0067AE59 /* Gallery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +178,7 @@
 				7156B79D234AAF550010C338 /* ImageZoomViewController.swift */,
 				71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */,
 				71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */,
+				710C6772238E33340067AE59 /* RefresherViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,7 +197,7 @@
 		71F8F7D423418BFB0005F27E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				71F8F7D523418C9C0005F27E /* Gallery.framework */,
+				710C676E238E32EE0067AE59 /* Gallery.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				71C2B346231FA400000E49F2 /* BaseTableView.swift in Sources */,
 				71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */,
 				71FAC3D72342C6B000755F06 /* DynamicTableHeaderViewController.swift in Sources */,
+				710C6773238E33340067AE59 /* RefresherViewController.swift in Sources */,
 				71F8F7DF2341B5C30005F27E /* Images.swift in Sources */,
 				71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */,
 				71C2B344231FA1DC000E49F2 /* BaseView.swift in Sources */,
