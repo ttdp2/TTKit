@@ -17,7 +17,8 @@ class MainViewController: BaseViewController {
                  "Image Gallery",
                  "Image Zooming",
                  "Dynamic Table headerView",
-                 "Refresher TableView"]
+                 "Refresher TableView",
+                 "Comment Reply TableView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +79,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = DynamicTableHeaderViewController()
         case 7:
             viewController = RefresherViewController()
+        case 8:
+            viewController = CommentReplyViewController()
         default:
             viewController = BaseViewController()
         }

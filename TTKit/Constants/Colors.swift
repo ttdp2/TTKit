@@ -15,5 +15,6 @@ struct Colors {
     static let FA = UIColor.fromHEX("FABCDE")
     
     static let border = UIColor.fromHEX("DEDEDE")
+    static let DC = UIColor.fromHEX("DCDCDC")
     
 }
