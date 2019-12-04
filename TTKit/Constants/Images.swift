@@ -15,5 +15,6 @@ struct Images {
     static let WWDC = UIImage(named: "wwdc16")
     static let Delete = UIImage(named: "Delete")
     static let Avatar = UIImage(named: "avatar")
+    static let Reply = UIImage(named: "Icon_Reply")
     
 }

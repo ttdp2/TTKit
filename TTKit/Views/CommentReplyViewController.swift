@@ -45,6 +45,7 @@ extension CommentReplyViewController: UITableViewDataSource {
         let item = items[indexPath.row]
         cell.fullname.text = item.name
         cell.comment.text = item.comment
+        cell.indexPath = indexPath
         return cell
     }
     
@@ -70,7 +71,18 @@ extension CommentReplyViewController: UITableViewDelegate {
     
 }
 
+protocol CommentDelegate: class {
+    func reply(to indexPath: IndexPath)
+}
+
 class CommentCell: BaseTableCell {
+    
+    // MARK: - Property
+    
+    weak var delegate: CommentDelegate?
+    
+    var indexPath: IndexPath!
+    var isTapped = false
     
     // MARK: - View
     
@@ -78,6 +90,7 @@ class CommentCell: BaseTableCell {
     
     let commentView: UIView = {
         let view = UIView()
+        view.backgroundColor = .white
         return view
     }()
     
@@ -103,12 +116,26 @@ class CommentCell: BaseTableCell {
         return label
     }()
     
+    lazy var replyButton: UIButton = {
+        let button = UIButton()
+        button.setImage(Images.Reply, for: .normal)
+        button.addTarget(self, action: #selector(handleReply), for: .touchUpInside)
+        return button
+    }()
+    
     override func setupViews() {
+        backgroundColor = UIColor.fromHEX("#F8F8F8")
+        
         addSubview(commentView)
         addConstraints(format: "H:[v0(\(UIScreen.main.bounds.width))]", views: commentView)
         addConstraints(format: "V:|[v0]|", views: commentView)
         commentViewTrailingConstraint = commentView.trailingAnchor.constraint(equalTo: trailingAnchor)
         commentViewTrailingConstraint.isActive = true
+        
+        addSubview(replyButton)
+        addConstraints(format: "H:[v0(56)]", views: replyButton)
+        addConstraints(format: "V:|[v0]|", views: replyButton)
+        replyButton.leadingAnchor.constraint(equalTo: commentView.trailingAnchor).isActive = true
         
         let topLine = UIView()
         topLine.backgroundColor = Colors.DC
@@ -128,6 +155,34 @@ class CommentCell: BaseTableCell {
         commentView.addSubview(comment)
         commentView.addConstraints(format: "H:|-71-[v0]-15-|", views: comment)
         commentView.addConstraints(format: "V:|-40-[v0]-15-|", views: comment)
+    }
+    
+    // MARK: - Method
+    
+    private var isReady = false
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        guard isReady else { isReady = true; return }
+        
+        commentViewTrailingConstraint.constant = selected ? -56 : 0
+        if isTapped && selected {
+            commentViewTrailingConstraint.constant = 0
+            isTapped = false
+        } else {
+            isTapped = selected
+        }
+        
+        UIView.animate(withDuration: 0.2) {
+            self.layoutIfNeeded()
+        }
+    }
+    
+    // MARK: - Action
+    
+    @objc func handleReply() {
+        delegate?.reply(to: indexPath)
     }
     
 }
