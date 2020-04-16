@@ -14,6 +14,7 @@
 		7110796A2397337E00F22324 /* Icon_Reply@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711079672397337E00F22324 /* Icon_Reply@3x.png */; };
 		7110796B2397337E00F22324 /* Icon_Reply.png in Resources */ = {isa = PBXBuildFile; fileRef = 711079682397337E00F22324 /* Icon_Reply.png */; };
 		7156B79E234AAF550010C338 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156B79D234AAF550010C338 /* ImageZoomViewController.swift */; };
+		715B3A1B24489582006DDD62 /* ToggleTableSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715B3A1A24489582006DDD62 /* ToggleTableSectionViewController.swift */; };
 		71B9DF19233B6CFD00DFA00A /* UIViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */; };
 		71BE051623963E78008E1B06 /* CommentReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE051523963E78008E1B06 /* CommentReplyViewController.swift */; };
 		71C2B313231F9CCB000E49F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2B312231F9CCB000E49F2 /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		711079672397337E00F22324 /* Icon_Reply@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_Reply@3x.png"; sourceTree = "<group>"; };
 		711079682397337E00F22324 /* Icon_Reply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Reply.png; sourceTree = "<group>"; };
 		7156B79D234AAF550010C338 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
+		715B3A1A24489582006DDD62 /* ToggleTableSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTableSectionViewController.swift; sourceTree = "<group>"; };
 		71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnimationViewController.swift; sourceTree = "<group>"; };
 		71BE051523963E78008E1B06 /* CommentReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentReplyViewController.swift; sourceTree = "<group>"; };
 		71C2B30F231F9CCB000E49F2 /* TTKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 				7156B79D234AAF550010C338 /* ImageZoomViewController.swift */,
 				71F8F7D223418BAB0005F27E /* ImageGalleryViewController.swift */,
 				71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */,
+				715B3A1A24489582006DDD62 /* ToggleTableSectionViewController.swift */,
 				710C6772238E33340067AE59 /* RefresherViewController.swift */,
 				71BE051523963E78008E1B06 /* CommentReplyViewController.swift */,
 			);
@@ -324,6 +327,7 @@
 				71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */,
 				71FAC3D72342C6B000755F06 /* DynamicTableHeaderViewController.swift in Sources */,
 				710C6773238E33340067AE59 /* RefresherViewController.swift in Sources */,
+				715B3A1B24489582006DDD62 /* ToggleTableSectionViewController.swift in Sources */,
 				71F8F7DF2341B5C30005F27E /* Images.swift in Sources */,
 				71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */,
 				71C2B344231FA1DC000E49F2 /* BaseView.swift in Sources */,

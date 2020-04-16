@@ -17,6 +17,7 @@ class MainViewController: BaseViewController {
                  "Image Gallery",
                  "Image Zooming",
                  "Dynamic Table headerView",
+                 "Toggle Table Section",
                  "Refresher TableView",
                  "Comment Reply TableView"]
     
@@ -78,8 +79,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         case 6:
             viewController = DynamicTableHeaderViewController()
         case 7:
-            viewController = RefresherViewController()
+            viewController = ToggleTableSectionViewController()
         case 8:
+            viewController = RefresherViewController()
+        case 9:
             viewController = CommentReplyViewController()
         default:
             viewController = BaseViewController()
