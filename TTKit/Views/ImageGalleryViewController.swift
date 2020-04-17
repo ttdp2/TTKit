@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Gallery
+//import Gallery    Need update to swift 5.2
 
 class ImageGalleryViewController: BaseViewController {
 
@@ -56,13 +56,13 @@ class ImageGalleryViewController: BaseViewController {
     // MARK: - Action
     
     @objc func handleAdd() {
-        Config.initialTab = .imageTab
-        Config.tabsToShow = [.imageTab, .videoTab]
-        
-        let gallery = GalleryController()
-        gallery.delegate = self
-        
-        present(gallery, animated: true)
+//        Config.initialTab = .imageTab
+//        Config.tabsToShow = [.imageTab, .videoTab]
+//
+//        let gallery = GalleryController()
+//        gallery.delegate = self
+//
+//        present(gallery, animated: true)
     }
     
     @objc func handleDelete(_ button: UIButton) {
@@ -184,25 +184,25 @@ extension ImageGalleryViewController: UITableViewDelegate {
     
 }
 
-extension ImageGalleryViewController: GalleryControllerDelegate {
-    
-    func galleryController(_ controller: GalleryController, didSelectImages images: [Image]) {
-        Image.resolve(images: images) { resolvedImages in
-            self.gallery(didSelect: resolvedImages.compactMap { $0 })
-        }
-        controller.dismiss(animated: true)
-    }
-    
-    func galleryController(_ controller: GalleryController, didSelectVideo video: Video) {
-        
-    }
-    
-    func galleryController(_ controller: GalleryController, requestLightbox images: [Image]) {
-        
-    }
-    
-    func galleryControllerDidCancel(_ controller: GalleryController) {
-        controller.dismiss(animated: true)
-    }
-    
-}
+//extension ImageGalleryViewController: GalleryControllerDelegate {
+//    
+//    func galleryController(_ controller: GalleryController, didSelectImages images: [Image]) {
+//        Image.resolve(images: images) { resolvedImages in
+//            self.gallery(didSelect: resolvedImages.compactMap { $0 })
+//        }
+//        controller.dismiss(animated: true)
+//    }
+//    
+//    func galleryController(_ controller: GalleryController, didSelectVideo video: Video) {
+//        
+//    }
+//    
+//    func galleryController(_ controller: GalleryController, requestLightbox images: [Image]) {
+//        
+//    }
+//    
+//    func galleryControllerDidCancel(_ controller: GalleryController) {
+//        controller.dismiss(animated: true)
+//    }
+//    
+//}
