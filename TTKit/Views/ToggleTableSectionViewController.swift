@@ -10,6 +10,18 @@ import UIKit
 
 class ToggleTableSectionViewController: BaseViewController {
     
+    // MARK: - Property
+    
+    var headers: [String] {
+        return ["Q: Hello world, this is a swift programming blog.",
+                "你好，欢迎来到中国旅游，我们的国家是一个文明古国，有着5000年的历史。",
+                "Q: I am here, go with me, for seriously. I am here, go with me, for seriously. I am here, go with me, for seriously. I am here, go with me, for seriously."]
+    }
+    
+    var question: [String: Bool] = ["Q0": false, "Q1": false, "Q2": false]
+    
+    // MARK: - View
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.dataSource = self
@@ -37,11 +49,14 @@ class ToggleTableCell: BaseTableCell {
 extension ToggleTableSectionViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        let key = "Q\(section)"
+        let isShow = question[key] ?? false
+        print(isShow)
+        return isShow ? 2 : 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,13 +68,8 @@ extension ToggleTableSectionViewController: UITableViewDataSource {
 
 extension ToggleTableSectionViewController: UITableViewDelegate {
     
-    var headers: [String] {
-        return ["Q: Hello world, this is a swift programme -ing blog.",
-        "Q: I am here, go with me, for seriously. I am here, go with me, for seriously. I am here, go with me, for seriously. I am here, go with me, for seriously."]
-    }
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        let height = heightForView(text: headers[section], font: UIFont.systemFont(ofSize: 18), width: tableView.frame.width - 30)
+        let height = heightForView(text: headers[section], font: UIFont.systemFont(ofSize: 18), width: tableView.frame.width - 15 - 10)
         print("\(section): \(height)")
         return height + 50
     }
@@ -77,12 +87,14 @@ extension ToggleTableSectionViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
+        view.tag = section
+        
         let questionlabel = UILabel()
         questionlabel.font = UIFont.systemFont(ofSize: 18)
         questionlabel.text = headers[section]
         questionlabel.numberOfLines = 0
         view.addSubview(questionlabel)
-        view.addConstraints(format: "H:|-15-[v0]-15-|", views: questionlabel)
+        view.addConstraints(format: "H:|-15-[v0]-10-|", views: questionlabel)
         view.addConstraints(format: "V:|-10-[v0]", views: questionlabel)
         
         let answerLabel = UILabel()
@@ -93,7 +105,19 @@ extension ToggleTableSectionViewController: UITableViewDelegate {
         view.addSubview(answerLabel)
         view.addConstraints(format: "H:[v0]-15-|", views: answerLabel)
         view.addConstraints(format: "V:[v0]-10-|", views: answerLabel)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleToggle))
+        view.addGestureRecognizer(tapGesture)
         return view
+    }
+    
+    @objc func handleToggle(_ sender: UITapGestureRecognizer) {
+        guard let tag = sender.view?.tag else { return }
+        
+        let key = "Q\(tag)"
+        question[key]?.toggle()
+        
+        tableView.reloadSections([tag], with: .fade)
     }
     
 }
