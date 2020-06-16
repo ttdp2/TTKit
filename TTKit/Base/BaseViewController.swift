@@ -20,7 +20,7 @@ class BaseViewController: UIViewController {
         view.addConstraints(format: "V:|-\(naviGap)-[v0(1)]", views: naviEdge)
         
         view.addSubview(bottomEdge)
-        view.addConstraints(format: "H:|[v0]|", views: naviEdge)
+        view.addConstraints(format: "H:|[v0]|", views: bottomEdge)
         view.addConstraints(format: "V:[v0(1)]-\(bottomGap)-|", views: bottomEdge)
         
         setupViews()
