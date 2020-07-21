@@ -35,12 +35,12 @@ class RefresherViewController: BaseViewController, UITableViewDataSource {
     }
     
     @objc func handleRefresh() {
-        self.refresher.endRefreshing()
-        self.tableView.reloadData()
-        
         DispatchQueue.global().async {
             sleep(1)
+            
             DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.refresher.endRefreshing()
             }
         }
     }
