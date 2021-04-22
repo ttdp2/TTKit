@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import Gallery    Need update to swift 5.2
 
 class ImageGalleryViewController: BaseViewController {
 

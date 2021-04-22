@@ -19,7 +19,8 @@ class MainViewController: BaseViewController {
                  "Dynamic Table headerView",
                  "Toggle Table Section",
                  "Refresher TableView",
-                 "Comment Reply TableView"]
+                 "Comment Reply TableView",
+                 "Floating Action Button"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +85,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = RefresherViewController()
         case 9:
             viewController = CommentReplyViewController()
+        case 10:
+            viewController = FloatingActionViewController()
         default:
             viewController = BaseViewController()
         }

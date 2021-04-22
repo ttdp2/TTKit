@@ -71,7 +71,7 @@ extension CommentReplyViewController: UITableViewDelegate {
     
 }
 
-protocol CommentDelegate: class {
+protocol CommentDelegate: AnyObject {
     func reply(to indexPath: IndexPath)
 }
 
