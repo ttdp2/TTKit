@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50060298263244E2008AB9ED /* FloatingActionViewController.swift */; };
+		5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006029A263248A5008AB9ED /* UIButton+Extension.swift */; };
 		710C6773238E33340067AE59 /* RefresherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C6772238E33340067AE59 /* RefresherViewController.swift */; };
 		711079692397337E00F22324 /* Icon_Reply@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711079662397337E00F22324 /* Icon_Reply@2x.png */; };
 		7110796A2397337E00F22324 /* Icon_Reply@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711079672397337E00F22324 /* Icon_Reply@3x.png */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		50060298263244E2008AB9ED /* FloatingActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionViewController.swift; sourceTree = "<group>"; };
+		5006029A263248A5008AB9ED /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		710C676E238E32EE0067AE59 /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gallery.framework; sourceTree = "<group>"; };
 		710C6772238E33340067AE59 /* RefresherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefresherViewController.swift; sourceTree = "<group>"; };
 		711079662397337E00F22324 /* Icon_Reply@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_Reply@2x.png"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				71C2B332231F9E20000E49F2 /* UIWindow+Extension.swift */,
 				71C2B334231F9E45000E49F2 /* UIView+Extension.swift */,
 				71C2B336231F9E8C000E49F2 /* UIColor+Extension.swift */,
+				5006029A263248A5008AB9ED /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */,
 				71C2B32B231F9DA8000E49F2 /* UIViewController+Extension.swift in Sources */,
 				71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */,
 				71C2B33F231F9FF8000E49F2 /* MainViewController.swift in Sources */,
