@@ -242,6 +242,15 @@ class FloatingActionViewController: BaseViewController {
                 self.likeButton2.alpha = 1
             }
         }
+        
+        UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: []) {
+            if self.actionView2.transform == .identity {
+                self.commentButton2.transform = .identity
+                self.watchButton2.transform = .identity
+                self.likeButton2.transform = .identity
+            }
+        }
+
     }
     
     @objc func toggleButton3() {
@@ -263,8 +272,11 @@ class FloatingActionViewController: BaseViewController {
     func closeMenu2() {
         actionView2.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
         commentButton2.alpha = 0
+        commentButton2.transform = CGAffineTransform(translationX: 0, y: 15)
         watchButton2.alpha = 0
+        watchButton2.transform = CGAffineTransform(translationX: 11, y: 11)
         likeButton2.alpha = 0
+        likeButton2.transform = CGAffineTransform(translationX: 15, y: 0)
     }
     
     func closeMenu3() {
