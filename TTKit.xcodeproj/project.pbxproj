@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500458202636FBD300845622 /* LikeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004581F2636FBD300845622 /* LikeAnimationViewController.swift */; };
 		50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50060298263244E2008AB9ED /* FloatingActionViewController.swift */; };
 		5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006029A263248A5008AB9ED /* UIButton+Extension.swift */; };
 		710C6773238E33340067AE59 /* RefresherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C6772238E33340067AE59 /* RefresherViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5004581F2636FBD300845622 /* LikeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationViewController.swift; sourceTree = "<group>"; };
 		50060298263244E2008AB9ED /* FloatingActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionViewController.swift; sourceTree = "<group>"; };
 		5006029A263248A5008AB9ED /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		710C676E238E32EE0067AE59 /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gallery.framework; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				710C6772238E33340067AE59 /* RefresherViewController.swift */,
 				71BE051523963E78008E1B06 /* CommentReplyViewController.swift */,
 				50060298263244E2008AB9ED /* FloatingActionViewController.swift */,
+				5004581F2636FBD300845622 /* LikeAnimationViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500458202636FBD300845622 /* LikeAnimationViewController.swift in Sources */,
 				5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */,
 				71C2B32B231F9DA8000E49F2 /* UIViewController+Extension.swift in Sources */,
 				71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */,

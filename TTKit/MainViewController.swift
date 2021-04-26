@@ -20,7 +20,8 @@ class MainViewController: BaseViewController {
                  "Toggle Table Section",
                  "Refresher TableView",
                  "Comment Reply TableView",
-                 "Floating Action Button"]
+                 "Floating Action Button",
+                 "Like Button Animation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +88,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = CommentReplyViewController()
         case 10:
             viewController = FloatingActionViewController()
+        case 11:
+            viewController = LikeAnimationViewController()
         default:
             viewController = BaseViewController()
         }
