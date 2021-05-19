@@ -10,6 +10,9 @@
 		500458202636FBD300845622 /* LikeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004581F2636FBD300845622 /* LikeAnimationViewController.swift */; };
 		50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50060298263244E2008AB9ED /* FloatingActionViewController.swift */; };
 		5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006029A263248A5008AB9ED /* UIButton+Extension.swift */; };
+		50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */; };
+		504578F22654D43B00D97BF2 /* TableCellEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */; };
+		50DB8DD0264E239C00FDCCFE /* CollectionLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB8DCF264E239C00FDCCFE /* CollectionLineViewController.swift */; };
 		710C6773238E33340067AE59 /* RefresherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C6772238E33340067AE59 /* RefresherViewController.swift */; };
 		711079692397337E00F22324 /* Icon_Reply@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711079662397337E00F22324 /* Icon_Reply@2x.png */; };
 		7110796A2397337E00F22324 /* Icon_Reply@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711079672397337E00F22324 /* Icon_Reply@3x.png */; };
@@ -50,6 +53,9 @@
 		5004581F2636FBD300845622 /* LikeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationViewController.swift; sourceTree = "<group>"; };
 		50060298263244E2008AB9ED /* FloatingActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionViewController.swift; sourceTree = "<group>"; };
 		5006029A263248A5008AB9ED /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCircleViewController.swift; sourceTree = "<group>"; };
+		504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellEventViewController.swift; sourceTree = "<group>"; };
+		50DB8DCF264E239C00FDCCFE /* CollectionLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLineViewController.swift; sourceTree = "<group>"; };
 		710C676E238E32EE0067AE59 /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gallery.framework; sourceTree = "<group>"; };
 		710C6772238E33340067AE59 /* RefresherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefresherViewController.swift; sourceTree = "<group>"; };
 		711079662397337E00F22324 /* Icon_Reply@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_Reply@2x.png"; sourceTree = "<group>"; };
@@ -194,6 +200,9 @@
 				71BE051523963E78008E1B06 /* CommentReplyViewController.swift */,
 				50060298263244E2008AB9ED /* FloatingActionViewController.swift */,
 				5004581F2636FBD300845622 /* LikeAnimationViewController.swift */,
+				50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */,
+				50DB8DCF264E239C00FDCCFE /* CollectionLineViewController.swift */,
+				504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,8 +318,10 @@
 				71F8F7D323418BAB0005F27E /* ImageGalleryViewController.swift in Sources */,
 				71BE051623963E78008E1B06 /* CommentReplyViewController.swift in Sources */,
 				71C2B32D231F9DCB000E49F2 /* UITableViewCell+Extension.swift in Sources */,
+				50DB8DD0264E239C00FDCCFE /* CollectionLineViewController.swift in Sources */,
 				71C2B342231FA088000E49F2 /* BaseViewController.swift in Sources */,
 				71C2B331231F9DF3000E49F2 /* UserDefaults+Extension.swift in Sources */,
+				50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */,
 				71C2B313231F9CCB000E49F2 /* AppDelegate.swift in Sources */,
 				71C2B328231F9D73000E49F2 /* UIApplication+Extension.swift in Sources */,
 				50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */,
@@ -331,6 +342,7 @@
 				71B9DF19233B6CFD00DFA00A /* UIViewAnimationViewController.swift in Sources */,
 				71C2B337231F9E8C000E49F2 /* UIColor+Extension.swift in Sources */,
 				7156B79E234AAF550010C338 /* ImageZoomViewController.swift in Sources */,
+				504578F22654D43B00D97BF2 /* TableCellEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

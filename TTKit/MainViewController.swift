@@ -21,7 +21,10 @@ class MainViewController: BaseViewController {
                  "Refresher TableView",
                  "Comment Reply TableView",
                  "Floating Action Button",
-                 "Like Button Animation"]
+                 "Like Button Animation",
+                 "Life Circle",
+                 "Collection Background Line",
+                 "TableView Cell Event"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +93,12 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = FloatingActionViewController()
         case 11:
             viewController = LikeAnimationViewController()
+        case 12:
+            viewController = LifeCircleViewController()
+        case 13:
+            viewController = CollectionLineViewController()
+        case 14:
+            viewController = TableViewCellEventViewController()
         default:
             viewController = BaseViewController()
         }
