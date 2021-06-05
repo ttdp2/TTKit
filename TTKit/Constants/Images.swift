@@ -17,4 +17,7 @@ struct Images {
     static let Avatar = UIImage(named: "avatar")
     static let Reply = UIImage(named: "Icon_Reply")
     
+    static let BubbleSent = UIImage(named: "bubble_sent")
+    static let BubbleReceived = UIImage(named: "bubble_received")
+    
 }

@@ -24,7 +24,8 @@ class MainViewController: BaseViewController {
                  "Like Button Animation",
                  "Life Circle",
                  "Collection Background Line",
-                 "TableView Cell Event"]
+                 "TableView Cell Event",
+                 "Bubble Message"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,6 +100,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = CollectionLineViewController()
         case 14:
             viewController = TableViewCellEventViewController()
+        case 15:
+            viewController = BubbleMessageViewController()
         default:
             viewController = BaseViewController()
         }
