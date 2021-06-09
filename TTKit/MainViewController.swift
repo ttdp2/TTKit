@@ -25,7 +25,8 @@ class MainViewController: BaseViewController {
                  "Life Circle",
                  "Collection Background Line",
                  "TableView Cell Event",
-                 "Bubble Message"]
+                 "Bubble Message",
+                 "Pop Up Input"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +103,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = TableViewCellEventViewController()
         case 15:
             viewController = BubbleMessageViewController()
+        case 16:
+            viewController = PopUpInputViewController()
         default:
             viewController = BaseViewController()
         }
