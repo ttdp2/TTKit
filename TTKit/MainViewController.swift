@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: BaseViewController {
     
-    let demos = ["Scroll view including View & TableView",
+    let demos = ["Pop Up Input Alert",
                  "Scroll view including Header & TableView",
                  "UIView Animation",
                  "Left Alignment Action Sheet",
@@ -26,7 +26,7 @@ class MainViewController: BaseViewController {
                  "Collection Background Line",
                  "TableView Cell Event",
                  "Bubble Message",
-                 "Pop Up Input"]
+                 "Scroll view including View & TableView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +72,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         
         switch indexPath.row {
         case 0:
-            viewController = ScrollViewController()
+            viewController = PopUpInputViewController()
         case 1:
             viewController = ScrollHeaderViewController()
         case 2:
@@ -104,7 +104,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         case 15:
             viewController = BubbleMessageViewController()
         case 16:
-            viewController = PopUpInputViewController()
+            viewController = ScrollViewController()
         default:
             viewController = BaseViewController()
         }
