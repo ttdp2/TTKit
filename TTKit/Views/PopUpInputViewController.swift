@@ -15,7 +15,6 @@ class PopUpInputViewController: BaseViewController, UIViewControllerTransitionin
         super.viewDidLoad()
         
         let alertButton = UIBarButtonItem(title: "Alert", style: .done, target: self, action: #selector(alert))
-        
         let popUpButton = UIBarButtonItem(title: "Pop Up", style: .done, target: self, action: #selector(popUp))
         navigationItem.rightBarButtonItems = [alertButton, popUpButton]
     }
@@ -133,9 +132,21 @@ class PopUpAlertViewController: BaseViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        addKeyboardObserver()
+        hideKeyboardWhenTappedAround()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tap))
-        view.addGestureRecognizer(tapGesture)
+        textView.becomeFirstResponder()
+    }
+    
+    func addKeyboardObserver() {
+        // Input fields move up when keyboard shows
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboard), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     // MARK: - View
@@ -147,6 +158,7 @@ class PopUpAlertViewController: BaseViewController, UITextViewDelegate {
         return view
     }()
     
+    var containerViewCenterYConstraint: NSLayoutConstraint!
     let containerView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(hex: "#F0F0F0")
@@ -188,18 +200,19 @@ class PopUpAlertViewController: BaseViewController, UITextViewDelegate {
         button.setTitle("Cancel", for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
         button.addTarget(self, action: #selector(touchDown), for: .touchDown)
-        button.addTarget(self, action: #selector(touchUp), for: .touchDragExit)
-//        button.addTarget(self, action: #selector(touchUp), for: .touchUpInside)
+        button.addTarget(self, action: #selector(touchUp), for: .touchDragOutside)
+        button.addTarget(self, action: #selector(handleCancel), for: .touchUpInside)
         return button
     }()
     
     lazy var sendButton: UIButton = {
         let button = UIButton()
+        button.isEnabled = false
         button.setTitle("Send", for: .normal)
-        button.setTitleColor(.systemBlue, for: .normal)
+        button.setTitleColor(.lightGray, for: .normal)
         button.addTarget(self, action: #selector(touchDown), for: .touchDown)
-        button.addTarget(self, action: #selector(touchInside), for: .touchUpInside)
         button.addTarget(self, action: #selector(touchUp), for: .touchDragOutside)
+        button.addTarget(self, action: #selector(handleSend), for: .touchUpInside)
         return button
     }()
     
@@ -211,20 +224,21 @@ class PopUpAlertViewController: BaseViewController, UITextViewDelegate {
         view.addConstraints(format: "V:|[v0]|", views: dimView)
         
         view.addSubview(containerView)
-        view.addConstraints(format: "H:|-60-[v0]-60-|", views: containerView)
+        view.addConstraints(format: "H:[v0(290)]", views: containerView)
         view.addConstraints(format: "V:[v0(220)]", views: containerView)
-        containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        containerViewCenterYConstraint = containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        containerViewCenterYConstraint.isActive = true
         
         containerView.addSubview(toLabel)
         containerView.addSubview(toName)
         containerView.addConstraints(format: "H:|-15-[v0][v1]", views: toLabel, toName)
-        containerView.addConstraints(format: "V:|-10-[v0]", views: toLabel)
+        containerView.addConstraints(format: "V:|[v0(40)]", views: toLabel)
         toName.centerYAnchor.constraint(equalTo: toLabel.centerYAnchor).isActive = true
         
         containerView.addSubview(textView)
         containerView.addConstraints(format: "H:|-15-[v0]-15-|", views: textView)
-        containerView.addConstraints(format: "V:[v0(120)]", views: textView)
-        textView.topAnchor.constraint(equalTo: toLabel.bottomAnchor, constant: 10).isActive = true
+        containerView.addConstraints(format: "V:|-40-[v0(120)]", views: textView)
         
         containerView.addSubview(cancelButton)
         containerView.addSubview(sendButton)
@@ -251,6 +265,18 @@ class PopUpAlertViewController: BaseViewController, UITextViewDelegate {
         ySeparator.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
     }
     
+    // MARK: - UITextView Delegate
+    
+    func textViewDidChange(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            sendButton.isEnabled = false
+            sendButton.setTitleColor(.lightGray, for: .normal)
+        } else {
+            sendButton.isEnabled = true
+            sendButton.setTitleColor(.systemBlue, for: .normal)
+        }
+    }
+    
     // MARK: - Action
     
     @objc func touchDown(_ sender: UIButton) {
@@ -258,16 +284,32 @@ class PopUpAlertViewController: BaseViewController, UITextViewDelegate {
     }
     
     @objc func touchUp(_ sender: UIButton) {
-        sender.backgroundColor = UIColor(hex: "#F0F0F0")
+        resetBackground(sender)
     }
     
-    @objc func touchInside() {
-        print("Here")
+    @objc func handleCancel(_ sender: UIButton) {
+        resetBackground(sender)
         dismiss(animated: true)
     }
     
-    @objc func tap() {
+    @objc func handleSend(_ sender: UIButton) {
+        resetBackground(sender)
         dismiss(animated: true)
+    }
+    
+    func resetBackground(_ button: UIButton) {
+        button.backgroundColor = UIColor(hex: "#F0F0F0")
+    }
+    
+    @objc func handleKeyboard(notification: Notification) {
+        if let _ = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect {
+            let isShowing = notification.name == UIResponder.keyboardWillShowNotification
+            containerViewCenterYConstraint.constant = isShowing ? -80 : 0
+        }
+        
+        UIView.animate(withDuration: 0) {
+            self.view.layoutIfNeeded()
+        }
     }
     
 }
