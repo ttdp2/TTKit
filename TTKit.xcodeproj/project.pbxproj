@@ -10,6 +10,7 @@
 		500458202636FBD300845622 /* LikeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004581F2636FBD300845622 /* LikeAnimationViewController.swift */; };
 		50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50060298263244E2008AB9ED /* FloatingActionViewController.swift */; };
 		5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006029A263248A5008AB9ED /* UIButton+Extension.swift */; };
+		5008EFF4267CD8CD00553C29 /* PopUpLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */; };
 		50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */; };
 		504578F22654D43B00D97BF2 /* TableCellEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */; };
 		50552862267C8034006C8D0C /* MultiLableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50552861267C8034006C8D0C /* MultiLableViewController.swift */; };
@@ -56,6 +57,7 @@
 		5004581F2636FBD300845622 /* LikeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationViewController.swift; sourceTree = "<group>"; };
 		50060298263244E2008AB9ED /* FloatingActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionViewController.swift; sourceTree = "<group>"; };
 		5006029A263248A5008AB9ED /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpLabelViewController.swift; sourceTree = "<group>"; };
 		50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCircleViewController.swift; sourceTree = "<group>"; };
 		504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellEventViewController.swift; sourceTree = "<group>"; };
 		50552861267C8034006C8D0C /* MultiLableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLableViewController.swift; sourceTree = "<group>"; };
@@ -194,9 +196,9 @@
 		71C2B33D231F9FB2000E49F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				710AA884267082F100AAF6EC /* PopUpInputViewController.swift */,
+				5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */,
 				50552861267C8034006C8D0C /* MultiLableViewController.swift */,
-				71C2B34A231FA707000E49F2 /* ScrollViewController.swift */,
-				71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */,
 				71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */,
 				AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */,
 				7156B79D234AAF550010C338 /* ImageZoomViewController.swift */,
@@ -211,7 +213,8 @@
 				50DB8DCF264E239C00FDCCFE /* CollectionLineViewController.swift */,
 				504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */,
 				710C823F266B3FA60095E9E5 /* BubbleMessageViewController.swift */,
-				710AA884267082F100AAF6EC /* PopUpInputViewController.swift */,
+				71C2B34A231FA707000E49F2 /* ScrollViewController.swift */,
+				71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				71C2B342231FA088000E49F2 /* BaseViewController.swift in Sources */,
 				71C2B331231F9DF3000E49F2 /* UserDefaults+Extension.swift in Sources */,
 				50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */,
+				5008EFF4267CD8CD00553C29 /* PopUpLabelViewController.swift in Sources */,
 				71C2B313231F9CCB000E49F2 /* AppDelegate.swift in Sources */,
 				71C2B328231F9D73000E49F2 /* UIApplication+Extension.swift in Sources */,
 				50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */,

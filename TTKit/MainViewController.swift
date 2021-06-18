@@ -11,8 +11,8 @@ import UIKit
 class MainViewController: BaseViewController {
     
     let demos = ["Pop Up Input Alert",
+                 "Pop Up Label View",
                  "Multi Label View",
-                 "UIView Animation",
                  "Left Alignment Action Sheet",
                  "Image Gallery",
                  "Image Zooming",
@@ -26,6 +26,7 @@ class MainViewController: BaseViewController {
                  "Collection Background Line",
                  "TableView Cell Event",
                  "Bubble Message",
+                 "UIView Animation",
                  "Scroll view including View & TableView",
                  "Scroll view including Header & TableView"]
     
@@ -75,9 +76,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         case 0:
             viewController = PopUpInputViewController()
         case 1:
-            viewController = MultiLabelViewController()
+            viewController = LabelViewController()
         case 2:
-            viewController = UIViewAnimationViewController()
+            viewController = MultiLabelViewController()
         case 3:
             viewController = LeftAlignedActionSheetViewController()
         case 4:
@@ -105,8 +106,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         case 15:
             viewController = BubbleMessageViewController()
         case 16:
-            viewController = ScrollViewController()
+            viewController = UIViewAnimationViewController()
         case 17:
+            viewController = ScrollViewController()
+        case 18:
             viewController = ScrollHeaderViewController()
         default:
             viewController = BaseViewController()
