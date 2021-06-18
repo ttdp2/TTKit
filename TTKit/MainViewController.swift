@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: BaseViewController {
     
     let demos = ["Pop Up Input Alert",
-                 "Scroll view including Header & TableView",
+                 "Multi Label View",
                  "UIView Animation",
                  "Left Alignment Action Sheet",
                  "Image Gallery",
@@ -26,7 +26,8 @@ class MainViewController: BaseViewController {
                  "Collection Background Line",
                  "TableView Cell Event",
                  "Bubble Message",
-                 "Scroll view including View & TableView"]
+                 "Scroll view including View & TableView",
+                 "Scroll view including Header & TableView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +75,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         case 0:
             viewController = PopUpInputViewController()
         case 1:
-            viewController = ScrollHeaderViewController()
+            viewController = MultiLabelViewController()
         case 2:
             viewController = UIViewAnimationViewController()
         case 3:
@@ -105,6 +106,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = BubbleMessageViewController()
         case 16:
             viewController = ScrollViewController()
+        case 17:
+            viewController = ScrollHeaderViewController()
         default:
             viewController = BaseViewController()
         }
