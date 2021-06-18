@@ -201,10 +201,6 @@ class LabelTableViewCell: BaseTableCell {
     // container view height will be modified when laying out subviews
     var containerHeightConstraint: NSLayoutConstraint = NSLayoutConstraint()
     
-    override func layoutSubviews() {
-        
-    }
-    
     override func setupViews() {
         containerView.backgroundColor = .yellow
         addSubview(containerView)
@@ -212,6 +208,7 @@ class LabelTableViewCell: BaseTableCell {
         addConstraints(format: "V:|-10-[v0]|", views: containerView)
         containerHeightConstraint = containerView.heightAnchor.constraint(equalToConstant: 0)
         containerHeightConstraint.isActive = true
+        containerHeightConstraint.priority = .defaultHigh
     }
     
     func updateViews() {
