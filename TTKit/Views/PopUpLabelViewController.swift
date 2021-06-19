@@ -32,12 +32,10 @@ class LabelViewController: BaseViewController, UIViewControllerTransitioningDele
     // MARK: - PopUpLabelView Delegate
     
     func popUpLabelViewDidDelete(_ label: AimLabel) {
-        print(aimLabel?.text == label.text)
         aimLabel = nil
     }
     
     func popUpLabelViewDidSelect(_ label: AimLabel) {
-        print(label)
         aimLabel = label
     }
     
@@ -343,18 +341,8 @@ class PopUpLabelViewController: BaseViewController {
         containerView.addConstraints(format: "V:[v0(45)]|", views: ySeparator)
         ySeparator.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
     }
-    
-    // MARK: - UITextView Delegate
-    
-    func textViewDidChange(_ textView: UITextView) {
-        if textView.text.isEmpty {
-            doneButton.isEnabled = false
-            doneButton.setTitleColor(.lightGray, for: .normal)
-        } else {
-            doneButton.isEnabled = true
-            doneButton.setTitleColor(.systemBlue, for: .normal)
-        }
-    }
+
+    // MARK: - Action
     
     @objc func textFieldDidChange(_ textField: UITextField) {
         let text = textField.text ?? ""
@@ -371,8 +359,6 @@ class PopUpLabelViewController: BaseViewController {
         
         labelView.text = text
     }
-    
-    // MARK: - Action
     
     @objc func selectColor(_ sender: UITapGestureRecognizer) {
         clearSelection()
