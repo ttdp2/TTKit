@@ -13,6 +13,7 @@
 		5008EFF4267CD8CD00553C29 /* PopUpLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */; };
 		50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */; };
 		504578F22654D43B00D97BF2 /* TableCellEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */; };
+		5054739B26841F08006F8E95 /* NilViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5054739A26841F08006F8E95 /* NilViewModelViewController.swift */; };
 		50552862267C8034006C8D0C /* MultiLableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50552861267C8034006C8D0C /* MultiLableViewController.swift */; };
 		50DB8DD0264E239C00FDCCFE /* CollectionLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB8DCF264E239C00FDCCFE /* CollectionLineViewController.swift */; };
 		710AA885267082F100AAF6EC /* PopUpInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AA884267082F100AAF6EC /* PopUpInputViewController.swift */; };
@@ -60,6 +61,7 @@
 		5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpLabelViewController.swift; sourceTree = "<group>"; };
 		50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCircleViewController.swift; sourceTree = "<group>"; };
 		504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellEventViewController.swift; sourceTree = "<group>"; };
+		5054739A26841F08006F8E95 /* NilViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilViewModelViewController.swift; sourceTree = "<group>"; };
 		50552861267C8034006C8D0C /* MultiLableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLableViewController.swift; sourceTree = "<group>"; };
 		50DB8DCF264E239C00FDCCFE /* CollectionLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLineViewController.swift; sourceTree = "<group>"; };
 		710AA884267082F100AAF6EC /* PopUpInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpInputViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				710AA884267082F100AAF6EC /* PopUpInputViewController.swift */,
 				5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */,
+				5054739A26841F08006F8E95 /* NilViewModelViewController.swift */,
 				50552861267C8034006C8D0C /* MultiLableViewController.swift */,
 				71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */,
 				AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */,
@@ -324,6 +327,7 @@
 				5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */,
 				710AA885267082F100AAF6EC /* PopUpInputViewController.swift in Sources */,
 				71C2B32B231F9DA8000E49F2 /* UIViewController+Extension.swift in Sources */,
+				5054739B26841F08006F8E95 /* NilViewModelViewController.swift in Sources */,
 				71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */,
 				710C8240266B3FA60095E9E5 /* BubbleMessageViewController.swift in Sources */,
 				71C2B33F231F9FF8000E49F2 /* MainViewController.swift in Sources */,

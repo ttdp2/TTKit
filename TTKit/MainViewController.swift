@@ -12,6 +12,7 @@ class MainViewController: BaseViewController {
     
     let demos = ["Pop Up Input Alert",
                  "Pop Up Label View",
+                 "Nil ViewModel Controller",
                  "Multi Label View",
                  "Left Alignment Action Sheet",
                  "Image Gallery",
@@ -78,7 +79,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         case 1:
             viewController = LabelViewController()
         case 2:
-            viewController = MultiLabelViewController()
+            viewController = NilViewModelViewController()
         case 3:
             viewController = LeftAlignedActionSheetViewController()
         case 4:
@@ -111,6 +112,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = ScrollViewController()
         case 18:
             viewController = ScrollHeaderViewController()
+        case 19:
+            viewController = MultiLabelViewController()
         default:
             viewController = BaseViewController()
         }
