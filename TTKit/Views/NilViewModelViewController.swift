@@ -17,6 +17,30 @@ class NilViewModelViewController: BaseViewController {
         navigationItem.rightBarButtonItem = nextButton
     }
     
+    let avatarView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(hex: "F0F0F0")
+        view.layer.cornerRadius = 48
+        view.layer.masksToBounds = true
+        return view
+    }()
+    
+    let imageView = UIImageView()
+    
+    override func setupViews() {
+        view.addSubview(avatarView)
+        view.addConstraints(format: "H:[v0(132)]", views: avatarView)
+        view.addConstraints(format: "V:[v0(132)]", views: avatarView)
+        avatarView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        avatarView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        imageView.image = UIImage(named: "avatar_10.png")
+        imageView.alpha = 0.5
+        avatarView.addSubview(imageView)
+        avatarView.addConstraints(format: "H:|[v0]|", views: imageView)
+        avatarView.addConstraints(format: "V:|-16-[v0]-(-10)-|", views: imageView)
+    }
+    
     // MARK: - Action
     
     @objc func handleNext() {
