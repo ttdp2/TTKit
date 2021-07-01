@@ -11,6 +11,12 @@
 		50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50060298263244E2008AB9ED /* FloatingActionViewController.swift */; };
 		5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006029A263248A5008AB9ED /* UIButton+Extension.swift */; };
 		5008EFF4267CD8CD00553C29 /* PopUpLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */; };
+		50285019268E6B520002783D /* TTKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50285017268E6B520002783D /* TTKit.xcdatamodeld */; };
+		5028501F268E6C860002783D /* BookEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028501B268E6C860002783D /* BookEntity+CoreDataClass.swift */; };
+		50285020268E6C860002783D /* BookEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028501C268E6C860002783D /* BookEntity+CoreDataProperties.swift */; };
+		50285021268E6C860002783D /* PersonEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028501D268E6C860002783D /* PersonEntity+CoreDataClass.swift */; };
+		50285022268E6C860002783D /* PersonEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028501E268E6C860002783D /* PersonEntity+CoreDataProperties.swift */; };
+		50285024268E6CE00002783D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50285023268E6CE00002783D /* CoreDataManager.swift */; };
 		50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */; };
 		504578F22654D43B00D97BF2 /* TableCellEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */; };
 		5054739B26841F08006F8E95 /* NilViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5054739A26841F08006F8E95 /* NilViewModelViewController.swift */; };
@@ -59,6 +65,12 @@
 		50060298263244E2008AB9ED /* FloatingActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionViewController.swift; sourceTree = "<group>"; };
 		5006029A263248A5008AB9ED /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpLabelViewController.swift; sourceTree = "<group>"; };
+		50285018268E6B520002783D /* TTKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TTKit.xcdatamodel; sourceTree = "<group>"; };
+		5028501B268E6C860002783D /* BookEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5028501C268E6C860002783D /* BookEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5028501D268E6C860002783D /* PersonEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5028501E268E6C860002783D /* PersonEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50285023268E6CE00002783D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		50386C0C2648B4E6006321F3 /* LifeCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCircleViewController.swift; sourceTree = "<group>"; };
 		504578F12654D43B00D97BF2 /* TableCellEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellEventViewController.swift; sourceTree = "<group>"; };
 		5054739A26841F08006F8E95 /* NilViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilViewModelViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +128,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5028501A268E6C630002783D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				50285023268E6CE00002783D /* CoreDataManager.swift */,
+				5028501B268E6C860002783D /* BookEntity+CoreDataClass.swift */,
+				5028501C268E6C860002783D /* BookEntity+CoreDataProperties.swift */,
+				5028501D268E6C860002783D /* PersonEntity+CoreDataClass.swift */,
+				5028501E268E6C860002783D /* PersonEntity+CoreDataProperties.swift */,
+				50285017268E6B520002783D /* TTKit.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		711079652397337E00F22324 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +175,7 @@
 				71C2B340231FA07D000E49F2 /* Base */,
 				71C2B33D231F9FB2000E49F2 /* Views */,
 				71C2B338231F9EA7000E49F2 /* Utilities */,
+				5028501A268E6C630002783D /* Core Data */,
 				71F8F7DD2341B5B00005F27E /* Constants */,
 				711079652397337E00F22324 /* Resources */,
 				71C2B324231F9D1B000E49F2 /* Extensions */,
@@ -325,13 +351,17 @@
 			files = (
 				500458202636FBD300845622 /* LikeAnimationViewController.swift in Sources */,
 				5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */,
+				50285021268E6C860002783D /* PersonEntity+CoreDataClass.swift in Sources */,
 				710AA885267082F100AAF6EC /* PopUpInputViewController.swift in Sources */,
 				71C2B32B231F9DA8000E49F2 /* UIViewController+Extension.swift in Sources */,
 				5054739B26841F08006F8E95 /* NilViewModelViewController.swift in Sources */,
 				71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */,
 				710C8240266B3FA60095E9E5 /* BubbleMessageViewController.swift in Sources */,
+				50285024268E6CE00002783D /* CoreDataManager.swift in Sources */,
 				71C2B33F231F9FF8000E49F2 /* MainViewController.swift in Sources */,
+				50285022268E6C860002783D /* PersonEntity+CoreDataProperties.swift in Sources */,
 				71C2B333231F9E20000E49F2 /* UIWindow+Extension.swift in Sources */,
+				5028501F268E6C860002783D /* BookEntity+CoreDataClass.swift in Sources */,
 				71C2B33A231F9ED8000E49F2 /* DateUtility.swift in Sources */,
 				71F8F7D323418BAB0005F27E /* ImageGalleryViewController.swift in Sources */,
 				71BE051623963E78008E1B06 /* CommentReplyViewController.swift in Sources */,
@@ -342,6 +372,7 @@
 				50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */,
 				5008EFF4267CD8CD00553C29 /* PopUpLabelViewController.swift in Sources */,
 				71C2B313231F9CCB000E49F2 /* AppDelegate.swift in Sources */,
+				50285019268E6B520002783D /* TTKit.xcdatamodeld in Sources */,
 				71C2B328231F9D73000E49F2 /* UIApplication+Extension.swift in Sources */,
 				50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */,
 				71C2B335231F9E45000E49F2 /* UIView+Extension.swift in Sources */,
@@ -355,6 +386,7 @@
 				715B3A1B24489582006DDD62 /* ToggleTableSectionViewController.swift in Sources */,
 				71F8F7DF2341B5C30005F27E /* Images.swift in Sources */,
 				71C2B34B231FA707000E49F2 /* ScrollViewController.swift in Sources */,
+				50285020268E6C860002783D /* BookEntity+CoreDataProperties.swift in Sources */,
 				71C2B344231FA1DC000E49F2 /* BaseView.swift in Sources */,
 				71C2B348231FA445000E49F2 /* BaseTableCell.swift in Sources */,
 				71C2B33C231F9F8A000E49F2 /* ScreenUtility.swift in Sources */,
@@ -564,6 +596,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		50285017268E6B520002783D /* TTKit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50285018268E6B520002783D /* TTKit.xcdatamodel */,
+			);
+			currentVersion = 50285018268E6B520002783D /* TTKit.xcdatamodel */;
+			path = TTKit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 71C2B307231F9CCB000E49F2 /* Project object */;
 }
