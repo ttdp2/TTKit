@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HTTPSSLViewController: BaseViewController {
     
@@ -25,6 +26,17 @@ class HTTPSSLViewController: BaseViewController {
         }
         
         dataTask.resume()
+        
+        if let data = AF.request("https://ag.bizersoft.com/api/users/1000000038").response {
+            print("AF", data)
+        }
+        
+        AF.request("https://ag.bizersoft.com/api/users/1000000038").response { response in
+            if let data = response.data {
+                let json = try! JSONSerialization.jsonObject(with: data, options: [])
+                print(json)
+            }
+        }
     }
     
 }
