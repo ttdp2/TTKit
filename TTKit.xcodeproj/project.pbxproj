@@ -25,6 +25,16 @@
 		5054739B26841F08006F8E95 /* NilViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5054739A26841F08006F8E95 /* NilViewModelViewController.swift */; };
 		50552862267C8034006C8D0C /* MultiLableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50552861267C8034006C8D0C /* MultiLableViewController.swift */; };
 		50DB8DD0264E239C00FDCCFE /* CollectionLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB8DCF264E239C00FDCCFE /* CollectionLineViewController.swift */; };
+		50F067362690A84A00110809 /* MultiPartContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F067242690A84A00110809 /* MultiPartContent.swift */; };
+		50F067372690A84A00110809 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F067252690A84A00110809 /* HTTPTask.swift */; };
+		50F067382690A84A00110809 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F067262690A84A00110809 /* DataStructure.swift */; };
+		50F067392690A84A00110809 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F067272690A84A00110809 /* HTTPRequest.swift */; };
+		50F0673A2690A84A00110809 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F067282690A84A00110809 /* HTTPResponse.swift */; };
+		50F0673B2690A84A00110809 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F067292690A84A00110809 /* HTTP.swift */; };
+		50F0673C2690A84A00110809 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F0672A2690A84A00110809 /* HTTPError.swift */; };
+		50F0673D2690A84A00110809 /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F0672B2690A84A00110809 /* HTTPStatus.swift */; };
+		50F0673E2690A84A00110809 /* URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F0672C2690A84A00110809 /* URLEncoding.swift */; };
+		50F0673F2690A84A00110809 /* URLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F0672D2690A84A00110809 /* URLSessionManager.swift */; };
 		710AA885267082F100AAF6EC /* PopUpInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AA884267082F100AAF6EC /* PopUpInputViewController.swift */; };
 		710C6773238E33340067AE59 /* RefresherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C6772238E33340067AE59 /* RefresherViewController.swift */; };
 		710C8240266B3FA60095E9E5 /* BubbleMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C823F266B3FA60095E9E5 /* BubbleMessageViewController.swift */; };
@@ -154,6 +164,16 @@
 		5054739A26841F08006F8E95 /* NilViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilViewModelViewController.swift; sourceTree = "<group>"; };
 		50552861267C8034006C8D0C /* MultiLableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLableViewController.swift; sourceTree = "<group>"; };
 		50DB8DCF264E239C00FDCCFE /* CollectionLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLineViewController.swift; sourceTree = "<group>"; };
+		50F067242690A84A00110809 /* MultiPartContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPartContent.swift; sourceTree = "<group>"; };
+		50F067252690A84A00110809 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		50F067262690A84A00110809 /* DataStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
+		50F067272690A84A00110809 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		50F067282690A84A00110809 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		50F067292690A84A00110809 /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		50F0672A2690A84A00110809 /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		50F0672B2690A84A00110809 /* HTTPStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatus.swift; sourceTree = "<group>"; };
+		50F0672C2690A84A00110809 /* URLEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLEncoding.swift; sourceTree = "<group>"; };
+		50F0672D2690A84A00110809 /* URLSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionManager.swift; sourceTree = "<group>"; };
 		710AA884267082F100AAF6EC /* PopUpInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpInputViewController.swift; sourceTree = "<group>"; };
 		710C676E238E32EE0067AE59 /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gallery.framework; sourceTree = "<group>"; };
 		710C6772238E33340067AE59 /* RefresherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefresherViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +262,23 @@
 			path = "Core Data";
 			sourceTree = "<group>";
 		};
+		50F067232690A84A00110809 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				50F067242690A84A00110809 /* MultiPartContent.swift */,
+				50F067252690A84A00110809 /* HTTPTask.swift */,
+				50F067262690A84A00110809 /* DataStructure.swift */,
+				50F067272690A84A00110809 /* HTTPRequest.swift */,
+				50F067282690A84A00110809 /* HTTPResponse.swift */,
+				50F067292690A84A00110809 /* HTTP.swift */,
+				50F0672A2690A84A00110809 /* HTTPError.swift */,
+				50F0672B2690A84A00110809 /* HTTPStatus.swift */,
+				50F0672C2690A84A00110809 /* URLEncoding.swift */,
+				50F0672D2690A84A00110809 /* URLSessionManager.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
 		711079652397337E00F22324 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +317,7 @@
 				71C2B338231F9EA7000E49F2 /* Utilities */,
 				5028501A268E6C630002783D /* Core Data */,
 				71F8F7DD2341B5B00005F27E /* Constants */,
+				50F067232690A84A00110809 /* HTTP */,
 				711079652397337E00F22324 /* Resources */,
 				71C2B324231F9D1B000E49F2 /* Extensions */,
 				71F8F7D423418BFB0005F27E /* Frameworks */,
@@ -529,18 +567,24 @@
 				710C8240266B3FA60095E9E5 /* BubbleMessageViewController.swift in Sources */,
 				50285024268E6CE00002783D /* CoreDataManager.swift in Sources */,
 				71C2B33F231F9FF8000E49F2 /* MainViewController.swift in Sources */,
+				50F0673C2690A84A00110809 /* HTTPError.swift in Sources */,
 				50285022268E6C860002783D /* PersonEntity+CoreDataProperties.swift in Sources */,
 				71C2B333231F9E20000E49F2 /* UIWindow+Extension.swift in Sources */,
+				50F0673B2690A84A00110809 /* HTTP.swift in Sources */,
 				5028501F268E6C860002783D /* BookEntity+CoreDataClass.swift in Sources */,
+				50F0673F2690A84A00110809 /* URLSessionManager.swift in Sources */,
 				71C2B33A231F9ED8000E49F2 /* DateUtility.swift in Sources */,
 				71F8F7D323418BAB0005F27E /* ImageGalleryViewController.swift in Sources */,
 				71BE051623963E78008E1B06 /* CommentReplyViewController.swift in Sources */,
 				71C2B32D231F9DCB000E49F2 /* UITableViewCell+Extension.swift in Sources */,
+				50F067382690A84A00110809 /* DataStructure.swift in Sources */,
 				50DB8DD0264E239C00FDCCFE /* CollectionLineViewController.swift in Sources */,
 				71C2B342231FA088000E49F2 /* BaseViewController.swift in Sources */,
 				71C2B331231F9DF3000E49F2 /* UserDefaults+Extension.swift in Sources */,
 				50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */,
+				50F067372690A84A00110809 /* HTTPTask.swift in Sources */,
 				5008EFF4267CD8CD00553C29 /* PopUpLabelViewController.swift in Sources */,
+				50F0673A2690A84A00110809 /* HTTPResponse.swift in Sources */,
 				5005B890268FE53100E1BD86 /* HTTPSSLViewController.swift in Sources */,
 				71C2B313231F9CCB000E49F2 /* AppDelegate.swift in Sources */,
 				50285019268E6B520002783D /* TTKit.xcdatamodeld in Sources */,
@@ -549,8 +593,10 @@
 				71C2B335231F9E45000E49F2 /* UIView+Extension.swift in Sources */,
 				71C2B326231F9D5B000E49F2 /* UINavigationController+Extension.swift in Sources */,
 				50552862267C8034006C8D0C /* MultiLableViewController.swift in Sources */,
+				50F067362690A84A00110809 /* MultiPartContent.swift in Sources */,
 				71C2B32F231F9DDE000E49F2 /* UITableView+Extension.swift in Sources */,
 				71C2B346231FA400000E49F2 /* BaseTableView.swift in Sources */,
+				50F0673E2690A84A00110809 /* URLEncoding.swift in Sources */,
 				71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */,
 				71FAC3D72342C6B000755F06 /* DynamicTableHeaderViewController.swift in Sources */,
 				710C6773238E33340067AE59 /* RefresherViewController.swift in Sources */,
@@ -562,8 +608,10 @@
 				71C2B348231FA445000E49F2 /* BaseTableCell.swift in Sources */,
 				71C2B33C231F9F8A000E49F2 /* ScreenUtility.swift in Sources */,
 				AC3FD08C233C540E00324BBE /* LeftAlignedActionSheetViewController.swift in Sources */,
+				50F0673D2690A84A00110809 /* HTTPStatus.swift in Sources */,
 				71B9DF19233B6CFD00DFA00A /* UIViewAnimationViewController.swift in Sources */,
 				71C2B337231F9E8C000E49F2 /* UIColor+Extension.swift in Sources */,
+				50F067392690A84A00110809 /* HTTPRequest.swift in Sources */,
 				7156B79E234AAF550010C338 /* ImageZoomViewController.swift in Sources */,
 				504578F22654D43B00D97BF2 /* TableCellEventViewController.swift in Sources */,
 			);
