@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		500458202636FBD300845622 /* LikeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004581F2636FBD300845622 /* LikeAnimationViewController.swift */; };
+		5005B890268FE53100E1BD86 /* HTTPSSLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5005B88F268FE53100E1BD86 /* HTTPSSLViewController.swift */; };
 		50060299263244E2008AB9ED /* FloatingActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50060298263244E2008AB9ED /* FloatingActionViewController.swift */; };
 		5006029B263248A5008AB9ED /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006029A263248A5008AB9ED /* UIButton+Extension.swift */; };
 		5008EFF4267CD8CD00553C29 /* PopUpLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		5004581F2636FBD300845622 /* LikeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationViewController.swift; sourceTree = "<group>"; };
+		5005B88F268FE53100E1BD86 /* HTTPSSLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSSLViewController.swift; sourceTree = "<group>"; };
 		50060298263244E2008AB9ED /* FloatingActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionViewController.swift; sourceTree = "<group>"; };
 		5006029A263248A5008AB9ED /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpLabelViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 		71C2B33D231F9FB2000E49F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5005B88F268FE53100E1BD86 /* HTTPSSLViewController.swift */,
 				710AA884267082F100AAF6EC /* PopUpInputViewController.swift */,
 				5008EFF3267CD8CD00553C29 /* PopUpLabelViewController.swift */,
 				5054739A26841F08006F8E95 /* NilViewModelViewController.swift */,
@@ -371,6 +374,7 @@
 				71C2B331231F9DF3000E49F2 /* UserDefaults+Extension.swift in Sources */,
 				50386C0D2648B4E6006321F3 /* LifeCircleViewController.swift in Sources */,
 				5008EFF4267CD8CD00553C29 /* PopUpLabelViewController.swift in Sources */,
+				5005B890268FE53100E1BD86 /* HTTPSSLViewController.swift in Sources */,
 				71C2B313231F9CCB000E49F2 /* AppDelegate.swift in Sources */,
 				50285019268E6B520002783D /* TTKit.xcdatamodeld in Sources */,
 				71C2B328231F9D73000E49F2 /* UIApplication+Extension.swift in Sources */,

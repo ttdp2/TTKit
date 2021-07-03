@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: BaseViewController {
     
-    let demos = ["Pop Up Input Alert",
+    let demos = ["HTTP SSL View","Pop Up Input Alert",
                  "Pop Up Label View",
                  "Nil ViewModel Controller",
                  "Multi Label View",
@@ -75,7 +75,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         
         switch indexPath.row {
         case 0:
-            viewController = PopUpInputViewController()
+            viewController = HTTPSSLViewController()
         case 1:
             viewController = LabelViewController()
         case 2:
@@ -114,6 +114,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = ScrollHeaderViewController()
         case 19:
             viewController = MultiLabelViewController()
+        case 20:
+            viewController = PopUpInputViewController()
         default:
             viewController = BaseViewController()
         }
