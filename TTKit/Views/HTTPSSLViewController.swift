@@ -7,30 +7,39 @@
 //
 
 import UIKit
-import Alamofire
 
 class HTTPSSLViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        var req = URLRequest(url: URL(string: "https://ag.bizersoft.com/api/users/1000000038")!)
-        req.httpMethod = "GET"
-
-        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: nil)
-        let dataTask = session.dataTask(with: req) { data, response, error in
-            if let data = data {
-                let json = try! JSONSerialization.jsonObject(with: data, options: [])
-                print(json)
-            }
-        }
         
-        dataTask.resume()
+        let context = CoreDataManager.shared.viewContext
+
+        let book1 = BookEntity(context: context)
+        book1.title = "Hello"
+
+        let book2 = BookEntity(context: context)
+        book2.title = "World"
+
+        let book3 = BookEntity(context: context)
+        book3.title = "Swift"
+//
+//        let person = PersonEntity(context: context)
+//        person.username = "matt"
+//        person.books = NSOrderedSet(array: [book1, book2, book3])
+//
+//        CoreDataManager.shared.saveContext()
         
-        AF.request("https://ag.bizersoft.com/api/users/1000000038").response { response in
-            if let data = response.data {
-                let _ = try! JSONSerialization.jsonObject(with: data, options: [])
+        if let entity = CoreDataOperation.fetchObject(entityName: "PersonEntity", context: context, attribute: "username", value: "matt") as? PersonEntity {
+            if let books = entity.books?.array as? [BookEntity] {
+                books.forEach { book in
+                    print(book.title)
+                }
             }
+            print(entity.username, entity.books)
+//            entity.addToBooks(NSOrderedSet(array: [book1, book2, book3]))
+//
+//            CoreDataManager.shared.saveContext()
         }
     }
     
@@ -45,21 +54,6 @@ class HTTPSSLViewController: BaseViewController {
         view.addConstraints(format: "V:[v0(200)]", views: imageView)
         imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
-        let http = HTTP(base: "https://ag.bizersoft.com")
-        http.get("/static/avatar/100/000/00/1000000038.jpg") { response in
-            DispatchQueue.main.async {
-                if let data = response.data {
-                    self.imageView.image = UIImage(data: data)
-                }
-            }
-        }
-        
-        let task = http.fileRequest(downloadPath: "/static/avatar/100/000/00/1000000038.jpg") { url, error in
-            
-        }
-        
-        task.go()
     }
     
 }
