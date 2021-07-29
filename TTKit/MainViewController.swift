@@ -30,7 +30,8 @@ class MainViewController: BaseViewController {
                  "Bubble Message",
                  "UIView Animation",
                  "Scroll view including View & TableView",
-                 "Scroll view including Header & TableView"]
+                 "Scroll view including Header & TableView",
+                 "New Segment View Controller"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,6 +118,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             viewController = ScrollViewController()
         case 20:
             viewController = ScrollHeaderViewController()
+        case 21:
+            viewController = NewSegmentViewController()
             
         default:
             viewController = BaseViewController()

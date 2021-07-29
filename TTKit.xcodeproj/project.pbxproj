@@ -59,6 +59,7 @@
 		71F8F7DF2341B5C30005F27E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7DE2341B5C30005F27E /* Images.swift */; };
 		71F8F7E12341B5FE0005F27E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8F7E02341B5FE0005F27E /* Colors.swift */; };
 		71FAC3D72342C6B000755F06 /* DynamicTableHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */; };
+		71FEEEB926B26979001F15E2 /* NewSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEEB826B26979001F15E2 /* NewSegmentViewController.swift */; };
 		AC3FD08C233C540E00324BBE /* LeftAlignedActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +132,7 @@
 		71F8F7DE2341B5C30005F27E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		71F8F7E02341B5FE0005F27E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		71FAC3D62342C6B000755F06 /* DynamicTableHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableHeaderViewController.swift; sourceTree = "<group>"; };
+		71FEEEB826B26979001F15E2 /* NewSegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSegmentViewController.swift; sourceTree = "<group>"; };
 		AC3FD08B233C540E00324BBE /* LeftAlignedActionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedActionSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,6 +273,7 @@
 				71B9DF18233B6CFD00DFA00A /* UIViewAnimationViewController.swift */,
 				71C2B34A231FA707000E49F2 /* ScrollViewController.swift */,
 				71DDFF902320844500CB8C81 /* ScrollHeaderViewController.swift */,
+				71FEEEB826B26979001F15E2 /* NewSegmentViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				71C2B326231F9D5B000E49F2 /* UINavigationController+Extension.swift in Sources */,
 				50552862267C8034006C8D0C /* MultiLableViewController.swift in Sources */,
 				71C2B32F231F9DDE000E49F2 /* UITableView+Extension.swift in Sources */,
+				71FEEEB926B26979001F15E2 /* NewSegmentViewController.swift in Sources */,
 				71C2B346231FA400000E49F2 /* BaseTableView.swift in Sources */,
 				71DDFF912320844500CB8C81 /* ScrollHeaderViewController.swift in Sources */,
 				71FAC3D72342C6B000755F06 /* DynamicTableHeaderViewController.swift in Sources */,
