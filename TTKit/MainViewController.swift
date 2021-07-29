@@ -10,7 +10,8 @@ import UIKit
 
 class MainViewController: BaseViewController {
     
-    let demos = ["HTTP SSL View","Pop Up Input Alert",
+    let demos = ["HTTP SSL View",
+                 "Pop Up Input Alert",
                  "Pop Up Label View",
                  "Nil ViewModel Controller",
                  "Multi Label View",
@@ -77,45 +78,46 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         case 0:
             viewController = HTTPSSLViewController()
         case 1:
-            viewController = LabelViewController()
-        case 2:
-            viewController = NilViewModelViewController()
-        case 3:
-            viewController = LeftAlignedActionSheetViewController()
-        case 4:
-            viewController = ImageGalleryViewController()
-        case 5:
-            viewController = ImageZoomViewController()
-        case 6:
-            viewController = DynamicTableHeaderViewController()
-        case 7:
-            viewController = ToggleTableSectionViewController()
-        case 8:
-            viewController = RefresherViewController()
-        case 9:
-            viewController = CommentReplyViewController()
-        case 10:
-            viewController = FloatingActionViewController()
-        case 11:
-            viewController = LikeAnimationViewController()
-        case 12:
-            viewController = LifeCircleViewController()
-        case 13:
-            viewController = CollectionLineViewController()
-        case 14:
-            viewController = TableViewCellEventViewController()
-        case 15:
-            viewController = BubbleMessageViewController()
-        case 16:
-            viewController = UIViewAnimationViewController()
-        case 17:
-            viewController = ScrollViewController()
-        case 18:
-            viewController = ScrollHeaderViewController()
-        case 19:
-            viewController = MultiLabelViewController()
-        case 20:
             viewController = PopUpInputViewController()
+        case 2:
+            viewController = LabelViewController()
+        case 3:
+            viewController = NilViewModelViewController()
+        case 4:
+            viewController = MultiLabelViewController()
+        case 5:
+            viewController = LeftAlignedActionSheetViewController()
+        case 6:
+            viewController = ImageGalleryViewController()
+        case 7:
+            viewController = ImageZoomViewController()
+        case 8:
+            viewController = DynamicTableHeaderViewController()
+        case 9:
+            viewController = ToggleTableSectionViewController()
+        case 10:
+            viewController = RefresherViewController()
+        case 11:
+            viewController = CommentReplyViewController()
+        case 12:
+            viewController = FloatingActionViewController()
+        case 13:
+            viewController = LikeAnimationViewController()
+        case 14:
+            viewController = LifeCircleViewController()
+        case 15:
+            viewController = CollectionLineViewController()
+        case 16:
+            viewController = TableViewCellEventViewController()
+        case 17:
+            viewController = BubbleMessageViewController()
+        case 18:
+            viewController = UIViewAnimationViewController()
+        case 19:
+            viewController = ScrollViewController()
+        case 20:
+            viewController = ScrollHeaderViewController()
+            
         default:
             viewController = BaseViewController()
         }

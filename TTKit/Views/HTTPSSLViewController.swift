@@ -10,39 +10,6 @@ import UIKit
 
 class HTTPSSLViewController: BaseViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let context = CoreDataManager.shared.viewContext
-
-        let book1 = BookEntity(context: context)
-        book1.title = "Hello"
-
-        let book2 = BookEntity(context: context)
-        book2.title = "World"
-
-        let book3 = BookEntity(context: context)
-        book3.title = "Swift"
-//
-//        let person = PersonEntity(context: context)
-//        person.username = "matt"
-//        person.books = NSOrderedSet(array: [book1, book2, book3])
-//
-//        CoreDataManager.shared.saveContext()
-        
-        if let entity = CoreDataOperation.fetchObject(entityName: "PersonEntity", context: context, attribute: "username", value: "matt") as? PersonEntity {
-            if let books = entity.books?.array as? [BookEntity] {
-                books.forEach { book in
-                    print(book.title)
-                }
-            }
-            print(entity.username, entity.books)
-//            entity.addToBooks(NSOrderedSet(array: [book1, book2, book3]))
-//
-//            CoreDataManager.shared.saveContext()
-        }
-    }
-    
     let imageView = UIImageView()
     
     override func setupViews() {
